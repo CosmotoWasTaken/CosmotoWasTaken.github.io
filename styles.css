@@ -1,0 +1,101 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(238, 220, 223);
+}
+
+h1, h2, h3, h4, h5, h6 {
+    text-align: center;
+    color: darkred;
+}
+
+#title {
+    position: absolute;
+    text-align: center;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 400px;
+    z-index: -1;
+
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://lh3.googleusercontent.com/ptW5sZ4rnOGBlgjS0u1H88VEbxc_dLkrcY-b6l14Ir11G0nZrcoIqlJ86lii-s_Cqegcj9x_bF2bu2m-Er4-mjc=w16383);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    color: white;
+}
+
+#title h1 {
+    color: white;
+    font-size: 100px;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 60px;
+}
+
+#title p {
+    font-size: 34px;
+}
+
+#title-spacer {
+    width: 100%;
+    height: 400px;
+}
+
+#navbar {
+    overflow: hidden;
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
+#navbar-links {
+    display: flex;
+    flex-direction: row;
+}
+
+#main-body {
+    box-sizing: border-box;
+    padding: 0 10%;
+}
+
+#about-us {
+    padding-bottom: 100px;
+}
+
+#profiles, #videos {
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1px;
+}
+
+#profiles div, #videos div {
+    width: 600px;
+    height: auto;
+    text-align: center;
+}
+
+#profiles p {
+    padding: 0 15px;
+}
+
+#profiles img {
+    height: 300px;
+    max-width: 100%;
+}
+
+#voicebank-img {
+    display: block;
+    margin: 0 auto;
+    height: 500px;
+}
+
+.justify-text {
+    text-align: justify;
+}
+
+.center-text {
+    text-align: center;
+}
