@@ -1,0 +1,35 @@
+#terms-of-use {
+    position:absolute;
+    top:0px;
+    right:0px;
+    bottom:0px;
+    left:0px;
+    text-align: center;
+    background-color: rgba(0, 0, 0, 0.75);
+}
+
+#terms-of-use-window {
+    height: 600px;
+    width: 600px;
+    padding: 10px;  
+    margin: auto;
+
+    background-color: white;
+    border-radius: 5%;
+    box-shadow: 0 0 20px black;
+}
+
+#terms-of-use-window h1 {
+    font-size: 80px;
+}
+
+#terms-of-use-window ul {
+    margin-bottom: 150px;
+}
+
+#terms-of-use-window button {
+    text-align: center;
+    padding: 5px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
