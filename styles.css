@@ -116,12 +116,12 @@ h6 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1px;
+    gap: 10px;
 }
 
 #profiles div,
 #videos div {
-    width: 600px;
+    width: 500px;
     height: auto;
     text-align: center;
 }
