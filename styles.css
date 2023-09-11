@@ -3,7 +3,12 @@ body {
     background-color: rgb(238, 220, 223);
 }
 
-h1, h2, h3, h4, h5, h6 {
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
     text-align: center;
     color: darkred;
 }
@@ -17,7 +22,7 @@ h1, h2, h3, h4, h5, h6 {
     height: 400px;
     z-index: -1;
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(https://lh3.googleusercontent.com/ptW5sZ4rnOGBlgjS0u1H88VEbxc_dLkrcY-b6l14Ir11G0nZrcoIqlJ86lii-s_Cqegcj9x_bF2bu2m-Er4-mjc=w16383);
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url();
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -43,15 +48,57 @@ h1, h2, h3, h4, h5, h6 {
 }
 
 #navbar {
+    display: table;
     overflow: hidden;
     position: fixed;
     top: 0;
+    left: 0;
+    height: 50px;
     width: 100%;
+    padding: 0 10px;
+
+    background: rgb(18, 18, 19);
+    color: white;
+    animation: fadeinAnimation ease .2s;
+}
+
+#navbar p {
+    float: left;
+    display: table-cell;
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 10px;
+}
+
+#icon {
+    float: left;
+    height: 50px;
 }
 
 #navbar-links {
-    display: flex;
-    flex-direction: row;
+    /* position: absolute;
+    top: 50%;
+    right: 0; */
+    float: right;
+}
+
+#navbar-links a {
+    float: right;
+    color: #f2f2f2;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    font-size: 17px;
+}
+
+#navbar-links a:hover {
+    background-color: #ddd;
+    color: black;
+  }
+
+#navbar-links button {
+    background-color: white;
+    border-radius: 5%;
 }
 
 #main-body {
@@ -63,16 +110,18 @@ h1, h2, h3, h4, h5, h6 {
     padding-bottom: 100px;
 }
 
-#profiles, #videos {
+#profiles,
+#videos {
     margin: auto;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 1px;
+    gap: 10px;
 }
 
-#profiles div, #videos div {
-    width: 600px;
+#profiles div,
+#videos div {
+    width: 500px;
     height: auto;
     text-align: center;
 }
@@ -84,6 +133,7 @@ h1, h2, h3, h4, h5, h6 {
 #profiles img {
     height: 300px;
     max-width: 100%;
+    border-radius: 5%;
 }
 
 #voicebank-img {
@@ -98,4 +148,13 @@ h1, h2, h3, h4, h5, h6 {
 
 .center-text {
     text-align: center;
+}
+
+@keyframes fadeinAnimation {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
 }
