@@ -1,21 +1,27 @@
 #terms-of-use {
-    position:absolute;
-    top:0px;
-    right:0px;
-    bottom:0px;
-    left:0px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.75);
 }
 
 #terms-of-use-window {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     height: 600px;
     width: 600px;
-    padding: 10px;  
-    margin: auto;
+    padding: 10px;
 
     background-color: white;
     border-radius: 5%;
+    border: 5px solid pink;
     box-shadow: 0 0 20px black;
 }
 
@@ -32,4 +38,41 @@
     padding: 5px 16px;
     text-decoration: none;
     font-size: 17px;
+}
+
+#main-body {
+    box-sizing: border-box;
+    padding: 0 10%;
+}
+
+.download-block {
+    background-color: white;
+    
+    width: 1120px;
+    height: auto;
+    padding: 10px;
+    
+    display: flex;
+    flex-wrap: wrap;
+    margin: auto;
+    justify-content: center;
+    gap: 10%;
+}
+
+.download-block div {
+    width: 480px;
+}
+
+.download-block iframe {
+    width: 560px;
+    max-width: 100%;
+    height: 315px;
+}
+
+.download-block button {
+    width: 70%;
+}
+
+.download-block h1 {
+    text-align: center;
 }
