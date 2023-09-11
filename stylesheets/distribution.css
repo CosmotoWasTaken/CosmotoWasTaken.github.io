@@ -1,3 +1,7 @@
+p {
+    word-break: break-all;
+}
+
 #terms-of-use {
     position: absolute;
     top: 0px;
@@ -47,20 +51,28 @@
 
 .download-block {
     background-color: white;
-    
+    border-radius: 10px;
+
     width: 1120px;
     height: auto;
     padding: 10px;
-    
+
     display: flex;
+    flex-direction: row;
     flex-wrap: wrap;
-    margin: auto;
+    margin: 25px auto;
     justify-content: center;
-    gap: 10%;
+    gap: 5%;
 }
 
-.download-block div {
-    width: 480px;
+.download-block:first-child {
+    margin-top: 75px;
+}
+
+.download-block-section {
+    gap: 50%;
+    width: 45%;
+    height: auto;
 }
 
 .download-block iframe {
@@ -69,10 +81,22 @@
     height: 315px;
 }
 
-.download-block button {
-    width: 70%;
-}
-
 .download-block h1 {
     text-align: center;
+}
+
+.download-description {
+    height: 50%;
+}
+
+.center-button {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.download-block button {
+    margin: 0;
+    width: 70%;
 }
