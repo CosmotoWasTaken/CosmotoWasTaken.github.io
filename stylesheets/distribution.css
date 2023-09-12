@@ -1,21 +1,31 @@
+p {
+    word-break: break-all;
+}
+
 #terms-of-use {
-    position:absolute;
-    top:0px;
-    right:0px;
-    bottom:0px;
-    left:0px;
+    position: absolute;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
     text-align: center;
     background-color: rgba(0, 0, 0, 0.75);
 }
 
 #terms-of-use-window {
+    position: absolute;
+    margin: 0;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+
     height: 600px;
     width: 600px;
-    padding: 10px;  
-    margin: auto;
+    padding: 10px;
 
     background-color: white;
     border-radius: 5%;
+    border: 5px solid pink;
     box-shadow: 0 0 20px black;
 }
 
@@ -32,4 +42,62 @@
     padding: 5px 16px;
     text-decoration: none;
     font-size: 17px;
+}
+
+#main-body {
+    box-sizing: border-box;
+    padding: 0 10%;
+}
+
+.download-block {
+    background-color: white;
+    border-radius: 10px;
+
+    width: 1120px;
+    height: auto;
+    padding: 10px;
+
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin: 25px auto;
+    justify-content: center;
+    gap: 5%;
+}
+
+.download-block:first-child {
+    margin-top: 75px;
+}
+
+.download-block-section {
+    gap: 50%;
+    width: 45%;
+    height: auto;
+}
+
+.download-block iframe {
+    width: 560px;
+    max-width: 100%;
+    height: 315px;
+    border: 2px solid #ccc; 
+    border-radius: 10px;
+}
+.download-block h1 {
+    text-align: center;
+}
+
+.download-description {
+    height: 75%;
+}
+
+.center-button{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+}
+
+.download-block button {
+    margin: 0;
+    width: 70%;
 }

@@ -1,4 +1,4 @@
-window.onload = function loadNavBar() {
+window.onload = function load() {
     const navbar = document.createElement('div');
 
     navbar.innerHTML = `
@@ -12,4 +12,5 @@ window.onload = function loadNavBar() {
     navbar.id = "navbar"
 
     document.body.appendChild(navbar);
+    document.getElementsByTagName("html")[0].style.visibility = "visible";
 }

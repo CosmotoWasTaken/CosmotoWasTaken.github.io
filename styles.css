@@ -1,3 +1,7 @@
+html {
+    visibility: hidden;
+}
+
 body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     background-color: rgb(238, 220, 223);
@@ -22,7 +26,7 @@ h6 {
     height: 400px;
     z-index: -1;
 
-    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url();
+    background-image: linear-gradient(rgba(0, 0, 0, 0.7), rgba(0, 0, 0, 0.7)), url(assets/banner.gif);
     background-repeat: no-repeat;
     background-size: cover;
     background-position: center;
@@ -94,11 +98,15 @@ h6 {
 #navbar-links a:hover {
     background-color: #ddd;
     color: black;
-  }
+}
 
 #navbar-links button {
     background-color: white;
     border-radius: 5%;
+}
+
+#navbar-links:last-child {
+    margin-right: 3%;
 }
 
 #main-body {
@@ -116,7 +124,7 @@ h6 {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
-    gap: 10px;
+    gap: 5%;
 }
 
 #profiles div,
@@ -131,9 +139,17 @@ h6 {
 }
 
 #profiles img {
-    height: 300px;
+    object-fit: cover;
+    height: auto;
+    width: 400px;
     max-width: 100%;
     border-radius: 5%;
+}
+
+#videos iframe {
+    width: 560px;
+    max-width: 100%;
+    height: 315px;
 }
 
 #voicebank-img {
@@ -154,6 +170,7 @@ h6 {
     0% {
         opacity: 0;
     }
+
     100% {
         opacity: 1;
     }
