@@ -86,10 +86,10 @@ p {
 }
 
 .download-description {
-    height: 50%;
+    height: 75%;
 }
 
-.center-button {
+.center-button{
     display: flex;
     align-items: center;
     justify-content: center;
